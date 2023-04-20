@@ -13,6 +13,9 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalise.css" />
+    <script src="js/slider.js" defer></script>
+    <link rel="stylesheet" href="node_modules/swiper/swiper.min.css" />
+    <script src="/node_modules/swiper/swiper.min.js"></script>
   </head>
   <body>
     <!-- LEFT-ASIDE -->
@@ -208,30 +211,126 @@
       <div id="mid">
         <div id="scrollable">
           <div id="slider">
+            <div class="slider_controls">
+              <svg
+                id="prev_slide"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_2_257)">
+                  <path
+                    d="M15 8L1 8M1 8L7 15M1 8L7 1"
+                    stroke="#E100F4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2_257">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg
+                id="next_slide"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_2_271)">
+                  <path
+                    d="M1 8L15 8M15 8L9 1M15 8L9 15"
+                    stroke="#E100F4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2_271">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
             <div class="SliderSlide CurrentSlide" id="FirstSlide">
-              <img src="img/Снимок экрана 2023-01-24 015458.png" alt="" />
-              <div class="slidercontrol">
+              <!-- <img src="img/Снимок экрана 2023-01-24 015458.png" alt="" /> -->
+              <div class="slider_pause">
                 <div class="slider_title">
                   <p class="slider_artist">Mapa D</p>
                   <p class="slider_track">Cold Shit</p>
                 </div>
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 56C12.5176 56 0 43.4824 0 28C0 12.5176 12.5176 0 28 0C43.4824 0 56 12.5176 56 28C56 43.4824 43.4824 56 28 56ZM28 3.29412C14.3294 3.29412 3.29412 14.3294 3.29412 28C3.29412 41.6706 14.3294 52.7059 28 52.7059C41.6706 52.7059 52.7059 41.6706 52.7059 28C52.7059 14.3294 41.6706 3.29412 28 3.29412Z"
+                    fill="#E100F4"
+                  />
+                  <path
+                    d="M19.7646 42.3294V13.6706L44.4705 28L19.7646 42.3294ZM23.0588 19.2706V36.5647L37.8823 27.8353L23.0588 19.2706Z"
+                    fill="#E100F4"
+                  />
+                </svg>
               </div>
             </div>
             <div class="SliderSlide" id="SecondSlide">
-              <img src="img/Снимок экрана (63).png" alt="" />
-              <div class="slidercontrol">
+              <!-- <img src="img/Снимок экрана (63).png" alt="" /> -->
+              <div class="slider_pause">
                 <div class="slider_title">
                   <p class="slider_artist">Mapa D</p>
                   <p class="slider_track">Cold Shit</p>
                 </div>
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 56C12.5176 56 0 43.4824 0 28C0 12.5176 12.5176 0 28 0C43.4824 0 56 12.5176 56 28C56 43.4824 43.4824 56 28 56ZM28 3.29412C14.3294 3.29412 3.29412 14.3294 3.29412 28C3.29412 41.6706 14.3294 52.7059 28 52.7059C41.6706 52.7059 52.7059 41.6706 52.7059 28C52.7059 14.3294 41.6706 3.29412 28 3.29412Z"
+                    fill="#E100F4"
+                  />
+                  <path
+                    d="M19.7646 42.3294V13.6706L44.4705 28L19.7646 42.3294ZM23.0588 19.2706V36.5647L37.8823 27.8353L23.0588 19.2706Z"
+                    fill="#E100F4"
+                  />
+                </svg>
               </div>
             </div>
             <div class="SliderSlide" id="ThirdSlide">
-              <div class="slidercontrol">
+              <div class="slider_pause">
                 <div class="slider_title">
                   <p class="slider_artist">Mapa D</p>
                   <p class="slider_track">Cold Shit</p>
                 </div>
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 56C12.5176 56 0 43.4824 0 28C0 12.5176 12.5176 0 28 0C43.4824 0 56 12.5176 56 28C56 43.4824 43.4824 56 28 56ZM28 3.29412C14.3294 3.29412 3.29412 14.3294 3.29412 28C3.29412 41.6706 14.3294 52.7059 28 52.7059C41.6706 52.7059 52.7059 41.6706 52.7059 28C52.7059 14.3294 41.6706 3.29412 28 3.29412Z"
+                    fill="#E100F4"
+                  />
+                  <path
+                    d="M19.7646 42.3294V13.6706L44.4705 28L19.7646 42.3294ZM23.0588 19.2706V36.5647L37.8823 27.8353L23.0588 19.2706Z"
+                    fill="#E100F4"
+                  />
+                </svg>
               </div>
             </div>
           </div>
@@ -313,8 +412,9 @@
                   <path
                     d="M19.7646 42.3294V13.6706L44.4705 28L19.7646 42.3294ZM23.0588 19.2706V36.5647L37.8823 27.8353L23.0588 19.2706Z"
                     fill="#E100F4"
-                  /></svg
-                ><img src="img/Now_Playing.png" alt="" />
+                  />
+                </svg>
+                <!-- <img src="img/Now_Playing.png" alt="" /> -->
               </div>
               <div class="tItem">
                 <svg
@@ -499,7 +599,7 @@
           <div id="nowhead"><span>Now Playing</span></div>
           <div id="nowbody">
             <div id="nowplayingimage">
-              <img src="img/Снимок экрана (63).png" alt="" />
+              <!-- <img src="img/Снимок экрана (63).png" alt="" /> -->
             </div>
             <div id="controlpanel">
               <div id="title"><span>Sweetest Pie</span></div>

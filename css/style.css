@@ -195,11 +195,25 @@ main header {
 #slider {
   display: flex;
   width: 100%;
-  overflow: scroll;
+  overflow: hidden;
   margin-bottom: 30px;
+  position: relative;
 }
-.slidercontrol {
-  border: 2px solid #f31919;
+.slider_controls svg {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+#prev_slide {
+  left: 1%;
+}
+#next_slide {
+  right: 11%;
+}
+.slider_pause {
+  border: 2px solid #ffffff;
   border-radius: 20px;
   position: absolute;
   width: 256px;
@@ -207,9 +221,36 @@ main header {
   left: 60%;
   top: 70%;
 }
+.slider_pause svg {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.slider_title {
+  position: absolute;
+  top: 15%;
+  width: 80%;
+  height: 100%;
+  left: 5%;
+}
 .slider_artist,
 .slider_track {
-  color: #e100f4;
+  position: absolute;
+  width: 100%;
+  margin: 0px;
+}
+.slider_artist {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  top: 0%;
+}
+.slider_track {
+  font-weight: 700;
+  font-size: 24px;
+  top: 45%;
 }
 .triItems {
   height: 35%;
@@ -252,12 +293,13 @@ main header {
 /* Scroll styles */
 
 #scrollable::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
+  margin-left: 2px;
 }
 #scrollable::-webkit-scrollbar-thumb {
-  background: #1e1e1e;
+  background: #161616;
   border-radius: 20px;
-  width: 10px;
+  width: 1px;
 }
 
 /* Right Aside */
