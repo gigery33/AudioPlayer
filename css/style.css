@@ -322,6 +322,16 @@ main header {
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 50%;
 }
+.tItem svg path {
+  transition: fill 0.1s linear;
+}
+.tItem svg:hover path {
+  fill: #9d00ac;
+  transition: fill 0.1s linear;
+}
+.tItem svg:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 /* Scroll styles */
 
 #scrollable::-webkit-scrollbar {
@@ -464,9 +474,11 @@ main header {
   position: absolute;
   top: 20%;
 }
-#emptycontrols {
-  width: 32px;
-  cursor: default;
+#favorite {
+  cursor: pointer;
+}
+#favorite svg {
+  height: 32px;
 }
 #controls {
   display: flex;
