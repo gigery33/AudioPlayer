@@ -73,6 +73,26 @@ function onRecommendationClick(event) {
   const target = event.target;
   console.log(target);
 }
+
+function fillNowPlayingBlock() {
+  const nowPlayingSettings = {
+    cover: faker.image.nightlife(1600, 900, true),
+    artist: faker.name.fullName(),
+    song: faker.music.songName(),
+  };
+
+  const nowPlayingImageWrapper = document.querySelector("#nowplayingimage");
+  const img = document.createElement("img");
+  const artist = document.querySelector("#artist span");
+  const title = document.querySelector("#title span");
+  artist.innerHTML = nowPlayingSettings.artist;
+  title.innerHTML = nowPlayingSettings.song;
+  img.src = nowPlayingSettings.cover;
+  nowPlayingImageWrapper.appendChild(img);
+}
+
 createSliderContent();
 
 fillRecommendationsItem();
+
+fillNowPlayingBlock();

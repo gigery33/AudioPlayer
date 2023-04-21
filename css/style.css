@@ -281,6 +281,7 @@ main header {
   width: 238px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 .tItem .cover {
   position: absolute;
@@ -291,6 +292,7 @@ main header {
   background-color: rgba(225, 0, 244, 0.4);
   transition: all 0.5s linear;
   border-radius: 50%;
+  pointer-events: none;
 }
 .tItem:hover svg {
   opacity: 1;

@@ -13,13 +13,14 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalise.css" />
-    <script src="js/slider.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
 
+    <script src="js/slider.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module" src="js/data-generator.js"></script>
   </head>
   <body>
     <!-- LEFT-ASIDE -->
@@ -292,14 +293,11 @@
                 </div>
               </div>
             </div>
-            <!-- If we need pagination -->
+
             <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
           </div>
 
@@ -341,12 +339,10 @@
         <div id="now">
           <div id="nowhead"><span>Now Playing</span></div>
           <div id="nowbody">
-            <div id="nowplayingimage">
-              <!-- <img src="img/Снимок экрана (63).png" alt="" /> -->
-            </div>
+            <div id="nowplayingimage"></div>
             <div id="controlpanel">
-              <div id="title"><span>Sweetest Pie</span></div>
-              <div id="artist"><span>Dua Lipa & Megan Thee Stallion</span></div>
+              <div id="title"><span></span></div>
+              <div id="artist"><span></span></div>
               <div id="controls">
                 <div id="progresbar"></div>
                 <div id="replay" class="Cbutton">
@@ -424,6 +420,5 @@
     </aside>
 
     <!-- /RIGHT-ASIDE -->
-    <script type="module" src="js/data-generator.js"></script>
   </body>
 </html>
