@@ -1,1 +1,1 @@
-# [Preview]:<https://github.com/gigery33/AudioPlayer>
+# [Preview]:<https://gigery33.github.io/AudioPlayer/>
